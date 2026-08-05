@@ -5,40 +5,127 @@
     <title>Golden Turnip Games</title>
     <link rel="icon" href="favicon.png" type="image/png">
 
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-            background: #f0f0f0;
-            color: #333;
+    <!-- Golden Turnip Games Ltd. -->
+
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+
+        background-color: #f0f0f0;
+        background-image: url("golden_turnip_games_wallpaper_large.png");
+        background-size: auto;
+        background-position: center;
+        background-repeat: repeat;
+        background-attachment: fixed;
+
+        color: #333;
+    }
+
+    .wrap {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+        gap: 24px;
+        box-sizing: border-box;
+    }
+
+    .web-box {
+        width: 100%;
+        max-width: 700px;
+        padding: 16px;
+        box-sizing: border-box;
+
+        background: #c0c0c1;
+        border: 3px outset #ffffff;
+        color: #000000;
+        font-family: "Courier New", monospace;
+        text-align: left;
+    }
+
+    .title-heading {
+        font-family: "Courier New", monospace;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #000000;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin: 0 0 16px;
+    }
+
+    .secondary-heading {
+        font-family: "Courier New", monospace;
+        font-size: 2em;
+        font-weight: bold;
+        color: #000000;
+        text-align: left;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin: 0 0 16px;
+    }
+
+    .content {
+        max-width: 700px;
+    }
+
+    h1 {
+        margin: 0 0 0.5rem;
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        margin: 0 0 0.5rem;
+        font-size: 2rem;
+    }
+
+    p, a {
+        margin: 0.3rem 0;
+        line-height: 1.5;
+    }
+
+    .spinning-image {
+        width: 128px;
+        height: auto;
+        animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
         }
 
-        .wrap {
-            min-height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 2rem;
+        to {
+            transform: rotate(360deg);
         }
-
-        .content {
-            max-width: 700px;
-        }
-
-        h1 { margin: 0 0 0.5rem; font-size: 2rem; }
-        p, a { margin: 0.3rem 0; line-height: 1.5; }
-    </style>
-
+    }
+</style>
 </head>
 <body>
 <main class="wrap">
-    <div class="content" role="main" aria-label="Centered text">
-        <h1>Website Migration!</h1>
-        <p>Our full site will be available soon.</p>
-        <a href="https://store.steampowered.com/app/2582940/Brass_Bellow/">Wishlist Brass Bellow</a>
+    <div class="web-box" >
+        <img class="spinning-image" src="favicon.png" alt="A turnip">
+        <h1 class = "title-heading">GOLDEN TURNIP GAMES LTD.</h1>
     </div>
-</main>
+
+    <div class="web-box" >
+        <h2 class "secondary-heading">TUNGSTEN HIVE</h2>
+        <p>Link to the steam page will be provided soon.</p>
+    </div>
+
+    <div class="web-box" >
+        <h2 class "secondary-heading">BRASS BELLOW</h2>
+        <p>Brass Bellow is currently in development.</p>
+        <a href="https://store.steampowered.com/app/2582940/Brass_Bellow/">Wishlist Brass Bellow on Steam</a>
+    </div>
+
+   </main>
+
+
 </body>
 </html>
